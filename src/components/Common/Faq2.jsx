@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
+
 const faqData = [
   {
     question: "Should I wear a helmet?",
@@ -22,11 +23,10 @@ const Faq2 = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
-
   return (
     <div className="max-w-5xl mx-auto mt-10 lg:w-[150vw] ">
       {faqData.map((item, index) => (
-        <div key={index} className="mb-4 bg-darkGray bg-opacity-10 rounded-md">
+        <div  key={index} className="mb-4 bg-darkGray bg-opacity-10 rounded-md">
           <button
             className="w-full text-left p-4 flex justify-between items-center hover:bg-gray-100 focus:outline-none"
             onClick={() => toggleFAQ(index)}

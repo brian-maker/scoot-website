@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
+
 const faqData = [
   {
     question: "How do i download the app?",
@@ -22,7 +23,6 @@ const FAQ = () => {
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? -1 : index);
   };
-
   return (
     <div className="max-w-6xl mx-auto mt-10 lg:w-[150vw] ">
       {faqData.map((item, index) => (
@@ -31,7 +31,7 @@ const FAQ = () => {
             className="w-full text-left p-4 flex justify-between items-center hover:bg-gray-100 focus:outline-none"
             onClick={() => toggleFAQ(index)}
           >
-            <span className={`text-lg font-medium ${openIndex === index ? 'text-darkGray' : 'text-darkGray font-mono text-xl'}`}>
+            <span  className={`text-lg font-medium ${openIndex === index ? 'text-darkGray' : 'text-darkGray font-mono text-xl'}`}>
               {item.question}
             </span>
             <span>

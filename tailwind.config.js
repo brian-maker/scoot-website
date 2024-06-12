@@ -12,7 +12,9 @@ export default {
       'bgFooter':"#333a44",
       'textFooter':'#818996',
       'cto':'#485567',
-      'dim-grey':' rgb(147 156 170 )'
+      'dim-grey':' rgb(147 ,156, 170 )',
+      'ligthyellow':'rgb(255, 244, 223)',
+      "careers":'rgba(242, 245, 249,1 )'
     },
     extend: {},
   },

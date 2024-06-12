@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import logo from '../../assets/logo.svg';
 import useMediaQuery from '../../useMediaQuery';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Navbar(){
@@ -22,6 +24,12 @@ function Navbar(){
         open: { opacity: 1, pointerEvents: 'auto' },
         closed: { opacity: 0, pointerEvents: 'none' }
       };
+
+      useEffect(() => {
+        AOS.init({
+          duration: 2000, // Animation duration
+        });
+      }, []);
 
       return (
         
@@ -49,11 +57,13 @@ function Navbar(){
                   <img src={logo} alt="logo"/>
               </motion.div>
               </NavLink>
-            <div className="hidden md:flex space-x-4">
+            <div  className="hidden md:flex space-x-4">
               <NavLink to="/" className="text-darkGray font-mono">Home</NavLink>
               <NavLink to="/about" className="text-darkGray font-mono">About</NavLink>
-              <NavLink to="/locations" className="text-darkGray font-mono">Locations</NavLink>
-              <NavLink to="/careers" className="text-darkGray font-mono">Careers</NavLink>
+              <NavLink 
+              to="/locations" className="text-darkGray font-mono">Locations</NavLink>
+              <NavLink 
+              to="/careers" className="text-darkGray font-mono">Careers</NavLink>
             </div>
             </section>
             </div>
@@ -65,7 +75,8 @@ function Navbar(){
               color:'#FFD700' 
             }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-             className="bg-yellow  text-white font-bold w-36 h-12  border-2 border-yellow hidden md:block my-3">
+             className="bg-yellow  text-white font-bold w-36 h-12  border-2 border-yellow hidden md:block my-3"
+             data-aos="zoom-in" data-aos-duration="1000">
               Get Scootin
             </motion.button>
 
