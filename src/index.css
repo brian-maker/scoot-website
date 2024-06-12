@@ -1,0 +1,256 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  }
+}
+h1{
+  font-family: monospace;
+  font-size: 38px;
+  line-height: 1.2;
+}
+/* cto semicircles */
+.semicircles::before{
+content: "";
+background-image: url('../src/assets/patterns/semi-circles.svg');
+background-repeat:no-repeat; 
+height: 100%;
+width: 100dvw;
+position: absolute;
+background-position: 75% bottom;
+}
+
+@media (min-width: 1024px) {
+    .semicircles::before {
+      background-position: 200% bottom;
+    }
+}
+@media (min-width: 1200px) {
+  .semicircles::before {
+    background-position: 130% bottom;
+  }
+}
+
+/* mobility patterns */
+@media (min-width: 768px) {
+  .mobility::before{
+    content: "";
+    background-image: url('../src/assets/patterns/circle.svg');
+    background-repeat:no-repeat; 
+    height: 100%;
+    width:100%;
+    background-size: 42%;
+    position: absolute;
+    left:85%;
+    top: 3%;
+    }
+}
+@media (min-width: 1024px) {
+  .mobility::before{
+    left:95%;
+    background-size: 30%;
+    top: 3%;
+    }
+}
+/* urban living patterns */
+@media (min-width: 768px) {
+  .urban::before{
+    content: "";
+    background-image: url('../src/assets/patterns/circle.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    background-size: 43.5%;
+    position: absolute;
+    left: -30%;
+    top: 54.5%;
+    }
+}
+@media (min-width: 1024px) {
+  .urban::before{
+    background-size: 30%;
+    left: -25%;
+    top: 54.5%;
+    }
+}
+.arrow-up::before{
+    content: "";
+    background-image: url('../src/assets/patterns/left-upward-arrow.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    position: absolute;
+    left: 10%;
+    top: 14%;
+}
+@media (min-width: 768px) {
+  .arrow-up::before{
+    left: 15%;
+    top: 17%;
+    }
+}
+@media (min-width: 1024px) {
+  .arrow-up::before{
+    left: 50%;
+    top: 25%;
+    }
+}
+.arrow-down::before{
+    content: "";
+    background-image: url('../src/assets/patterns/right-arrow.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-size: 100%;
+    right: 15%;
+    top: 53%;
+}
+@media (min-width: 768px) {
+  .arrow-down::before{ 
+    background-size: auto;
+    right: 15%;
+    top: 53%;
+}
+}
+@layer utilities {
+    .bg-mobile {
+      background-image: url('./assets/images/home-hero-mobile.jpg');
+    }
+    @media (min-width: 640px) {
+      .bg-tablet {
+        background-image: url('./assets/images/home-hero-tablet.jpg');
+      }
+    }
+    @media (min-width: 1024px) {
+      .bg-desktop {
+        background-image: url('./assets/images/home-hero-desktop.jpg');
+      }
+    }
+
+    /* about page */
+    .bg-about-mobile{
+      background-image: url('./assets/images/about-hero-mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100vw;  
+    }
+    @media (min-width: 640px) {
+      .bg-about-tablet {
+        background-image: url('./assets/images/about-hero-tablet.jpg');
+      }
+    }
+    @media (min-width: 1024px) {
+      .bg-about-desktop {
+        background-image: url('./assets/images/about-hero-desktop.jpg');
+        background-size: cover;
+      }
+    }
+/* location page */
+    .bg-location-mobile{
+      background-image: url('./assets/images/careers-location-hero-mobile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+    }
+    @media (min-width: 640px) {
+      .bg-location-tablet {
+        background-image: url('./assets/images/careers-locations-hero-tablet.jpg');
+      }
+    }
+    @media (min-width: 1024px) {
+      .bg-location-desktop {
+        background-image: url('./assets/images/careers-locations-hero-desktop.jpg');
+      }
+    }
+
+    .bg-map-mobile{
+      background-image: url('./assets/images/world-map-mobile.png');
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 20rem;
+      background-size: contain;
+      background-position: center;
+    }
+    @media (min-width: 640px) {
+      .bg-map-tablet {
+        background-image: url('./assets/images/world-map-tablet.png');
+        height: 20rem;
+        background-size: contain
+      }
+    }
+    @media (min-width: 1024px) {
+      .bg-map-desktop{
+        background-image: url('./assets/images/world-map-desktop.png');
+        height: 100vh;
+        background-size: contain
+      }
+    }
+
+
+    
+  }
+/* home page */
+@media (min-width: 768px){
+.btn:hover{
+    background: transparent;
+    color:#fab426 ;
+}
+}
+.text-dark-navy {
+    color: rgb(73 85 103);
+}
+a.active{
+  text-decoration: none;
+  color: #fab426;
+}
+.circle1{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fab426;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 55%;
+}
+.circle2{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fab426;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 55%;
+}
+.circle3{
+  width: 5rem;
+  height: 5rem;
+  background-color: #fab426;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 50%;
+}
+@media (min-width: 768px){
+  .circle2,.circle3{
+    top: 60%;
+  }
+}
+@media (min-width: 1024px){
+  .circle2,.circle3{
+    top: 55%;
+  }
+}
+@media (min-width: 1280px){
+  .circle1,.circle2,.circle3{
+    top: 60%;
+  }
+}
