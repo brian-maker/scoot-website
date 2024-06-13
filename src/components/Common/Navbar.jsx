@@ -98,7 +98,7 @@ function Navbar(){
                   scale: 1.1
                 }: {}}
                 >
-                  <img src={logo} alt="logo"/>
+                  <img onClick={toggleMenu} src={logo} alt="logo"/>
               </motion.div>
           </NavLink>
           <motion.div

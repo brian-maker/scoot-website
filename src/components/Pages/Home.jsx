@@ -24,21 +24,20 @@ function Home() {
     initial={{y: 0, opacity: 0 }}
     animate={{ y: 50, opacity: 1 }}
     transition={{ duration: 1 }}
+    className='overflow-hidden'
   >
-    <section className='bg-mobile sm:bg-tablet lg:bg-desktop h-[100vh] bg-cover bg-center home overflow-hidden flex flex-col justify-center items-center'>
-    <article  className='container xl:w-11/12 lg:flex lg:flex-col lg:justify-items-start align-middle lg:align-top lg:-translate-y-8 '>
-      <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-center w-2/3 mx-auto lg:ml-[10rem] mb-3 lg:w-[40rem] lg:text-left  lg:text-6xl'
+    <section className='bg-mobile sm:bg-tablet lg:bg-desktop h-[100vh] bg-cover bg-center home overflow-hidden flex flex-col justify-center items-center arrow-down-home line-home'>
+    <article  className='container xl:w-11/12 lg:flex lg:flex-col lg:justify-items-start align-middle lg:align-top border-2 white-circles'>
+      <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-center w-2/3 mx-auto lg:ml-[6rem] mb-3 lg:w-[40rem] lg:text-left  lg:text-6xl'
       >Scooter sharing made simple</h1>
-      <section data-aos="fade-up" data-aos-duration="1500"className='flex flex-col justify-center items-center lg:items-start lg:translate-x-[8rem] lg:ml-[15rem]'>
+      <section data-aos="fade-up" data-aos-duration="1500"className='flex flex-col justify-center items-center lg:items-start  lg:ml-[10rem]'>
       <p  className='w-5/6 text-white text-center mb-10 lg:w-5/12 lg:text-left md:text-xl lg:my-10'>
       Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
       </p>
 
-      <motion.button 
-      whileHover={{ backgroundColor: 'transparent' }}
-      className="bg-yellow  text-white font-mono border-2 border-yellow  text-xl btn  py-3 w-[12rem] outline-none ring-offset-0 hover:bg-transparent transition duration-1000 ease-in-out">
-          <p>Get Scootin</p>
-      </motion.button>
+      <button className="bg-yellow text-white font-mono border-2 border-yellow text-xl py-3 w-[12rem] outline-none ring-offset-0 lg:cursor-pointer lg:hover:bg-transparent transition duration-1000 ease-in-out">
+          Get Scootin
+      </button>
       </section>
       
     </article>

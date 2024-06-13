@@ -120,6 +120,70 @@ background-position: 75% bottom;
     top: 53%;
 }
 }
+.arrow-down-home::before{
+  content: "";
+  background-image: url('../src/assets/patterns/right-arrow.svg');
+  background-repeat:no-repeat; 
+  height:100%;
+  width:100%;
+  position: absolute;
+  background-size: 90%;
+  right: 55vw;
+  top: 75vh;
+}
+@media (min-width: 578px) {
+  .arrow-down-home::before{
+  background-size: 80%;
+  right: 50vw;
+  top: 65vh;
+  }
+}
+@media (min-width: 768px) {
+  .arrow-down-home::before{
+  background-size: 50%;
+  right: 10vw;
+  top: 75vh;
+  }
+}
+@media (min-width: 1024px) {
+  .arrow-down-home::before{
+  background-size: 24%;
+  left: 50%;
+  top: 55vh;
+  }
+  .line-home::after{
+  content: "";
+  background-image: url('../src/assets/patterns/line.svg');
+  background-repeat:no-repeat; 
+  height:100%;
+  width:100%;
+  position: absolute;
+  background-size: 10%;
+  left: 0vw;
+  top: 55vh;
+  z-index: 10;
+  }
+}
+@media (min-width:768px){
+.white-circles::after{
+  content: "";
+  background-image: url('../src/assets/patterns/white-circles.svg');
+  background-repeat:no-repeat; 
+  height:100%;
+  width:100%;
+  position: absolute;
+  background-size: 40%;
+  right: -65vw;
+  top: 80vh;
+}
+}
+@media (min-width:1024px){
+.white-circles::after{
+  background-size: 23%;
+  right: -80vw;
+  top: 58vh;
+}
+}
 @layer utilities {
     .bg-mobile {
       background-image: url('./assets/images/home-hero-mobile.jpg');
@@ -196,13 +260,6 @@ background-position: 75% bottom;
 
 
     
-  }
-/* home page */
-@media (min-width: 768px){
-.btn:hover{
-    background: transparent;
-    color:#fab426 ;
-}
 }
 .text-dark-navy {
     color: rgb(73 85 103);
