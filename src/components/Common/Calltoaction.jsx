@@ -16,7 +16,7 @@ function Calltoaction() {
         });
       }, []);
   return (
-    <section className='semicircles relative overflow-hidden'>
+    <section id='cta' className='semicircles relative overflow-hidden'>
         <div className='bg-cto py-10    lg:px-6 sm:px-5'>
         <div className='container mx-auto text-center text-white md:flex justify-between items-center xl:w-11/12'>
             <div>

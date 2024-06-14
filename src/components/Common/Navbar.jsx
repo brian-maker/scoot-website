@@ -58,12 +58,12 @@ function Navbar(){
               </motion.div>
               </NavLink>
             <div  className="hidden md:flex space-x-4">
-              <NavLink to="/" className="text-darkGray font-mono">Home</NavLink>
-              <NavLink to="/about" className="text-darkGray font-mono">About</NavLink>
+              <NavLink to="/" className="text-darkGray font-mono lg:hover:text-yellow ">Home</NavLink>
+              <NavLink to="/about" className="text-darkGray font-mono lg:hover:text-yellow">About</NavLink>
               <NavLink 
-              to="/locations" className="text-darkGray font-mono">Locations</NavLink>
+              to="/locations" className="text-darkGray font-mono lg:hover:text-yellow">Locations</NavLink>
               <NavLink 
-              to="/careers" className="text-darkGray font-mono">Careers</NavLink>
+              to="/careers" className="text-darkGray font-mono lg:hover:text-yellow">Careers</NavLink>
             </div>
             </section>
             </div>
@@ -77,7 +77,7 @@ function Navbar(){
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
              className="bg-yellow  text-white font-bold w-36 h-12  border-2 border-yellow hidden md:block my-3"
              data-aos="zoom-in" data-aos-duration="1000">
-              Get Scootin
+              <a href="#cta">Get Scootin</a>
             </motion.button>
 
           </div>
@@ -132,7 +132,7 @@ function Navbar(){
             }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
              className="bg-yellow hover:bg-blue-700 text-white font-bold py-4 px-14 fixed  left-10 bottom-20 border-2 border-yellow" onClick={toggleMenu}>
-              Get Scootin
+              <a href="#cta">Get Scootin</a>
             </motion.button>
           </motion.div>
         </nav>

@@ -2,6 +2,7 @@ import React ,{useEffect}from 'react'
 import { motion } from 'framer-motion'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import whiteCircles from '../../assets/patterns/white-circles.svg'
 
 function Location() {
   useEffect(() => {
@@ -15,8 +16,9 @@ function Location() {
     initial={{y: 0, opacity: 0 }}
     animate={{ y: 50, opacity: 1 }}
     transition={{ duration: 1 }}>
-      <section className='bg-location-mobile sm:bg-location-tablet lg:bg-location-desktop flex justify-center items-center lg:h-[40vh]  h-[30vh]'>
-      <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-6xl pt-7'>Locations</h1>
+      <section className='bg-location-mobile sm:bg-location-tablet lg:bg-location-desktop flex justify-center items-center h-[20vh] lg:h-[30vh] md:justify-between md:px-10 lg:px-[9rem]'>
+      <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-6xl'>Locations</h1>
+      <img className='hidden md:block' src={whiteCircles} alt="" />
       </section>
       <section className='py-12 container xl:w-11/12 mx-auto lg:px-6 '>
         <div data-aos="zoom-in" data-aos-duration="1000"  className='bg-map-mobile sm:bg-map-tablet lg:bg-map-desktop mx-auto container xl:w-11/12'>

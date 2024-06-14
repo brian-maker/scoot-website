@@ -6,6 +6,7 @@ import intergrity from '../../assets/images/our-integrity.jpg'
 import community from '../../assets/images/our-community.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import whiteCircles from '../../assets/patterns/white-circles.svg'
 
 function Careers() {
   useEffect(() => {
@@ -20,23 +21,26 @@ function Careers() {
     initial={{y: 0, opacity: 0 }}
     animate={{ y: 50, opacity: 1 }}
     transition={{ duration: 1 }}>
-      <section className='bg-location-mobile sm:bg-location-tablet lg:bg-location-desktop flex justify-center items-center lg:h-[40vh] h-[30vh]'>
-      <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-6xl pt-7'>careers</h1>
+      <section className='bg-location-mobile sm:bg-location-tablet lg:bg-location-desktop flex justify-center items-center h-[20vh] lg:h-[30vh] md:justify-between md:px-10 lg:px-[9rem]'>
+      <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-6xl'>careers</h1>
+      <img className='hidden md:block' src={whiteCircles} alt="" />
       </section>
       <section className='container xl:w-11/12 mx-auto lg:px-6 '>
-        <article className='flex flex-col-reverse lg:grid lg:grid-cols-2 pb-10 text-center lg:gap-10 lg:pb-20 py-10 lg:py-16'>
+        <div className='mission-patterns'>
+          <article className='flex flex-col-reverse lg:grid lg:grid-cols-2 pb-10 text-center lg:gap-10 lg:pb-20 py-10 lg:py-16'>
 
-          <div className='lg:text-left'>
-            <h2 data-aos="fade-up" data-aos-duration="1000" className='font-mono text-2xl font-bold text-darkGray w-1/2 mx-auto py-7 lg:text-5xl lg:mx-0 lg:w-3/4'>care to join our mission?</h2>
-            <p data-aos="fade-up" data-aos-duration="1500" className='w-9/12 mx-auto text-md text-darkGray font-mono lg:text-left lg:mx-0 lg:w-3/4'>We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
-            <button data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="300" className='w-1/2 lg:w-[30%] border-2 bg-yellow mx-auto font-mono my-10 outline-none ring-offset-0 py-3 capitalize text-2xl text-white hover:bg-white hover:text-yellow'>
-            <a href="#">Say Hello</a>
-          </button>
-          </div>
-          <div>
-            <img data-aos="zoom-in" data-aos-duration="1000" src={join} alt="join us" className='rounded-full h-[15rem] mx-auto lg:h-[20rem]' />
-          </div>
-        </article>
+  <div className='lg:text-left'>
+    <h2 data-aos="fade-up" data-aos-duration="1000" className='font-mono text-2xl font-bold text-darkGray w-1/2 mx-auto py-7 lg:text-5xl lg:mx-0 lg:w-3/4'>care to join our mission?</h2>
+    <p data-aos="fade-up" data-aos-duration="1500" className='w-9/12 mx-auto text-md text-darkGray font-mono lg:text-left lg:mx-0 lg:w-3/4'>We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+    <button data-aos="zoom-in" data-aos-duration="1000"  data-aos-delay="300" className='w-1/2 lg:w-[30%] border-2 bg-yellow mx-auto font-mono my-10 outline-none ring-offset-0 py-3 capitalize text-2xl text-white hover:bg-white hover:text-yellow'>
+    <a href="#">Say Hello</a>
+  </button>
+  </div>
+  <div>
+    <img data-aos="zoom-in" data-aos-duration="1000" src={join} alt="join us" className='rounded-full h-[15rem] mx-auto lg:h-[20rem]' />
+  </div>
+          </article>
+        </div>
 
       </section>
       <section className='mb-14 container xl:w-11/12 py-10 mx-auto lg:px-6'> 
