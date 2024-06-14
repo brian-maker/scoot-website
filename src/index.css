@@ -24,8 +24,30 @@ h1{
     left: 10%;
     top: 20%;
     z-index: 100;
-
 }
+@media (min-width: 640px){
+  .arrow-telemetry::before{
+    content: "";
+    background-image: url('../src/assets/patterns/left-downward-arrow.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 100;
+}
+}
+@media (min-width: 1024px){
+  .arrow-telemetry::before{
+    position: absolute;
+    left: 80%;
+    top: 60%;
+    
+}
+}
+
+
 .arrow-city::before{
   content: "";
     background-image: url('../src/assets/patterns/right-arrow.svg');
@@ -33,11 +55,25 @@ h1{
     height:100%;
     width:100%;
     position: absolute;
-    background-size: 95%;
-    left:-30%;
+    background-size: 70%;
+    left:-10%;
     top: 1%;
     z-index: 100;
 }
+@media (min-width: 1024px){
+  .arrow-city::before{
+     content: "";
+      background-image: url('../src/assets/patterns/right-arrow.svg');
+      background-repeat:no-repeat; 
+      height:100%;
+      width:100%;
+      position: absolute;
+      background-size: 50%;
+      left:-30%;
+      top: 1%;
+  }
+}
+
 .arrow-hustle::before{
     content: "";
     background-image: url('../src/assets/patterns/left-downward-arrow.svg');
@@ -48,6 +84,17 @@ h1{
     left: 30%;
     top: 1%;
     z-index: 100;
+}
+@media (min-width: 640px){
+  .arrow-hustle::before{
+    left: 40%;
+    top: 5%;
+}
+}
+@media (min-width: 1024px){
+.arrow-hustle::before{
+  left: 80%;
+}
 }
 /* cto semicircles */
 .semicircles::before{
@@ -199,6 +246,7 @@ background-position: 75% bottom;
   z-index: 10;
   }
 }
+
 @media (min-width:768px){
 .white-circles::after{
   content: "";
@@ -210,6 +258,48 @@ background-position: 75% bottom;
   background-size: 40%;
   right: -65vw;
   top: 80vh;
+}
+}
+@media (min-width:768px){
+.white-circles-home::after{
+  content: "";
+  background-image: url('../src/assets/patterns/circle.svg');
+  background-repeat:no-repeat; 
+  height:100%;
+  width:100%;
+  position: absolute;
+  background-size: 40%;
+  left: 75vw;
+  top: 0vh;
+  z-index: -100;
+}
+}
+@media (min-width:768px){
+.white-circles-home-left::after{
+  content: "";
+  background-image: url('../src/assets/patterns/circle.svg');
+  background-repeat:no-repeat; 
+  height:100%;
+  width:100%;
+  position: absolute;
+  background-size: 40%;
+  left: -25vw;
+  top: 0vh;
+  z-index: -100;
+}
+}
+@media (min-width:1024px){
+.white-circles-home::after{
+  background-size: 30%;
+  left: 90vw;
+  top: 0vh;
+}
+}
+@media (min-width:1024px){
+.white-circles-home-left::after{
+  background-size: 25%;
+  left: -20vw;
+  top: 0vh;
 }
 }
 @media (min-width:1024px){

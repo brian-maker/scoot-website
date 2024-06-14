@@ -11,7 +11,6 @@ import 'aos/dist/aos.css';
 
 
 
-
 function Home() {
   useEffect(() => {
     AOS.init({
@@ -26,8 +25,8 @@ function Home() {
     transition={{ duration: 1 }}
     className='overflow-hidden'
   >
-    <section className='bg-mobile sm:bg-tablet lg:bg-desktop h-[100vh] bg-cover bg-center home overflow-hidden flex flex-col justify-center items-center arrow-down-home line-home'>
-    <article  className='container xl:w-11/12 lg:flex lg:flex-col lg:justify-items-start align-middle lg:align-top  white-circles'>
+    <section className='bg-mobile sm:bg-tablet lg:bg-desktop h-[100vh] bg-cover bg-center home overflow-hidden flex flex-col justify-center items-center  line-home contain'>
+    <article  className='container xl:w-11/12 lg:flex lg:flex-col lg:justify-items-start align-middle lg:align-top  white-circles arrow-down-home'>
       <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-center w-2/3 mx-auto lg:ml-[6rem] mb-3 lg:w-[40rem] lg:text-left  lg:text-6xl'
       >Scooter sharing made simple</h1>
       <section data-aos="fade-up" data-aos-duration="1500"className='flex flex-col justify-center items-center lg:items-start  lg:ml-[10rem]'>
@@ -91,7 +90,7 @@ function Home() {
             </a>
             </button>
           </div>
-          <div className='lg:grid lg:justify-end arrow-telemetry'>
+          <div className='lg:grid lg:justify-end arrow-telemetry white-circles-home'>
             <img data-aos="zoom-in" data-aos-duration="1000" src={telemetry} alt="telemetry" className='w-64 h-64  md:w-80 md:h-80 rounded-full' />
           </div>
         </article>
@@ -109,7 +108,7 @@ function Home() {
             </button>
           
           </div>
-          <div className='lg:grid  lg:justify-start  w-full arrow-city'>
+          <div className='lg:grid  lg:justify-start  w-full arrow-city white-circles-home-left'>
             <img data-aos="zoom-in" data-aos-duration="1000" src={nearYou} alt="telemetry" className='w-64 h-64  rounded-full md:w-80 md:h-80 mx-auto' />
           </div>
         </article>
@@ -127,7 +126,7 @@ function Home() {
             </button>
           
           </div>
-          <div className='lg:grid lg:justify-end arrow-hustle'>
+          <div className='lg:grid lg:justify-end arrow-hustle white-circles-home'>
             <img data-aos="zoom-in" data-aos-duration="1000" src={payments} alt="telemetry" className='w-64 h-64 rounded-full md:w-80 md:h-80' />
           </div>
         </article>
