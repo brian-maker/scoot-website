@@ -25,19 +25,19 @@ function About() {
     initial={{y: 0, opacity: 0 }}
     animate={{ y: 50, opacity: 1 }}
     transition={{ duration: 1 }}>
-      <section className='bg-about-mobile sm:bg-about-tablet lg:bg-about-desktop  flex justify-center items-center  border-2 h-[20vh] lg:h-[30vh]'>
+      <section className='bg-about-mobile sm:bg-about-tablet lg:bg-about-desktop  flex justify-center items-center  h-[20vh] lg:h-[30vh]'>
         <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-6xl'>About</h1>
       </section>
       <section className='container xl:w-11/12 mx-auto lg:px-6 relative '>
         <div className='mobility'>
         <article className='pb-10 text-center 
-        flex flex-col-reverse lg:flex-row lg:justify-between lg:gap-10 lg:pb-20 py-10 border-2 '>
+        flex flex-col-reverse lg:flex-row lg:justify-between lg:gap-10 lg:pb-20 py-10 '>
         
-        <div className='border-2 w-full'>
+        <div className='w-full'>
           <h2 data-aos="fade-up" data-aos-duration="1000" className='font-mono text-2xl font-bold text-darkGray w-3/4 mx-auto lg:text-left lg:text-3xl lg:mx-0 lg:w-3/4 pt-5 lg:pt-0'>Mobility for the digital era</h2>
           <p data-aos="fade-up" data-aos-duration="1500" className='w-9/12 mx-auto text-center text-darkGray font-mono lg:text-left lg:mx-0 lg:w-3/4 py-7'>Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.</p>
         </div>
-        <div className='w-full border-2 arrow-up'>
+        <div className='w-full  arrow-up'>
           <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" src={mobility} alt="" className='rounded-full h-[20rem] mx-auto lg:h-[22rem]'/>
         </div>
         </article>
@@ -45,8 +45,8 @@ function About() {
         
         <div className="urban">
         <article className='text-center 
-        flex flex-col lg:flex-row lg:justify-between lg:gap-10 lg:pb-20 py-10 border-2 '>
-        <div className='border-2 w-full arrow-down'>
+        flex flex-col lg:flex-row lg:justify-between lg:gap-10 lg:pb-20 py-10 '>
+        <div className='w-full arrow-down'>
           <img data-aos="zoom-in" data-aos-duration="1000" src={urban} alt="" className='rounded-full h-[20rem] mx-auto lg:h-[22rem]'/>
         </div>
         <div className='w-full'>

@@ -14,6 +14,41 @@ h1{
   font-size: 38px;
   line-height: 1.2;
 }
+.arrow-telemetry::before{
+    content: "";
+    background-image: url('../src/assets/patterns/left-downward-arrow.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    z-index: 100;
+
+}
+.arrow-city::before{
+  content: "";
+    background-image: url('../src/assets/patterns/right-arrow.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    position: absolute;
+    background-size: 95%;
+    left:-30%;
+    top: 1%;
+    z-index: 100;
+}
+.arrow-hustle::before{
+    content: "";
+    background-image: url('../src/assets/patterns/left-downward-arrow.svg');
+    background-repeat:no-repeat; 
+    height:100%;
+    width:100%;
+    position: absolute;
+    left: 30%;
+    top: 1%;
+    z-index: 100;
+}
 /* cto semicircles */
 .semicircles::before{
 content: "";

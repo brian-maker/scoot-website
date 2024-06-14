@@ -33,7 +33,7 @@ function Navbar(){
 
       return (
         
-        <nav className='fixed border-2 bg-white z-50 w-full sm:px-5'>
+        <nav className='fixed  bg-white z-50 w-full sm:px-5'>
           <div className=" flex container mx-auto justify-between py-3 md:py-0 xl:w-11/12 text-lg font-bold tracking-wider z-50">
             <button onClick={toggleMenu} className="text-yellow font-bold md:hidden pl-5">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

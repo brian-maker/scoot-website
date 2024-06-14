@@ -20,10 +20,10 @@ function Careers() {
     initial={{y: 0, opacity: 0 }}
     animate={{ y: 50, opacity: 1 }}
     transition={{ duration: 1 }}>
-      <section className='bg-location-mobile sm:bg-location-tablet lg:bg-location-desktop flex justify-center items-center lg:h-[40vh] border-2 h-[30vh]'>
+      <section className='bg-location-mobile sm:bg-location-tablet lg:bg-location-desktop flex justify-center items-center lg:h-[40vh] h-[30vh]'>
       <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-6xl pt-7'>careers</h1>
       </section>
-      <section className='container xl:w-11/12 mx-auto lg:px-6 border-2'>
+      <section className='container xl:w-11/12 mx-auto lg:px-6 '>
         <article className='flex flex-col-reverse lg:grid lg:grid-cols-2 pb-10 text-center lg:gap-10 lg:pb-20 py-10 lg:py-16'>
 
           <div className='lg:text-left'>
@@ -39,7 +39,7 @@ function Careers() {
         </article>
 
       </section>
-      <section className='mb-14 container xl:w-11/12 py-10 mx-auto lg:px-6 border-2'> 
+      <section className='mb-14 container xl:w-11/12 py-10 mx-auto lg:px-6'> 
         <h2 data-aos="fade-up" data-aos-duration="1000"  className='font-mono text-5xl font-bold text-darkGray w-full text-center'>Why join us?</h2>
         <div className='pt-10 lg:flex lg:gap-10 lg:justify-evenly mx-auto'>
           <article className='flex flex-col justify-center relative'>
@@ -75,7 +75,7 @@ function Careers() {
 
         </div>
       </section>
-      <section className='container xl:w-11/12 mx-auto lg:px-6 flex flex-col items-center justify-center opacity-65 gap-5 pb-20 border-2'>
+      <section className='container xl:w-11/12 mx-auto lg:px-6 flex flex-col items-center justify-center opacity-65 gap-5 pb-20'>
         <article 
             data-aos="flip-down" data-aos-duration="1000"
             className='bg-careers font-mono text-bgFooter w-10/12 text-center capitalize py-6 sm:flex sm:justify-between sm:items-center sm:px-5'>

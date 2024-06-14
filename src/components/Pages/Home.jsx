@@ -27,7 +27,7 @@ function Home() {
     className='overflow-hidden'
   >
     <section className='bg-mobile sm:bg-tablet lg:bg-desktop h-[100vh] bg-cover bg-center home overflow-hidden flex flex-col justify-center items-center arrow-down-home line-home'>
-    <article  className='container xl:w-11/12 lg:flex lg:flex-col lg:justify-items-start align-middle lg:align-top border-2 white-circles'>
+    <article  className='container xl:w-11/12 lg:flex lg:flex-col lg:justify-items-start align-middle lg:align-top  white-circles'>
       <h1 data-aos="fade-up" data-aos-duration="1000" className='text-white text-center w-2/3 mx-auto lg:ml-[6rem] mb-3 lg:w-[40rem] lg:text-left  lg:text-6xl'
       >Scooter sharing made simple</h1>
       <section data-aos="fade-up" data-aos-duration="1500"className='flex flex-col justify-center items-center lg:items-start  lg:ml-[10rem]'>
@@ -45,7 +45,7 @@ function Home() {
     </section>
     <section className='opacity-80 lg:px-6'>
       
-      <div className='container xl:w-11/12 py-10  border-2 mx-auto lg:flex'>
+      <div className='container xl:w-11/12 py-10 mx-auto lg:flex'>
         <article className='flex flex-col justify-center items-center text-center
         md:flex-row md:gap-[4rem] lg:flex-col lg:items-start lg:gap-4'>
             <img data-aos="zoom-in" data-aos-duration="1000" src={LocateWithApp} alt="logo" className='w-14 h-14 md:h-24 md:w-24' />
@@ -78,9 +78,9 @@ function Home() {
     </section>
 
     <section className='opacity-80 py-20 lg:px-6' >
-      <div className='container xl:w-11/12  border-2 mx-auto'>
-        <article className='flex flex-col-reverse justify-center items-center gap-6 lg:grid lg:grid-cols-2'>
-          <div className='text-center gap-6 border-2 lg:text-left'>
+      <div className='container xl:w-11/12 mx-auto'>
+        <article className='flex flex-col-reverse justify-center items-center gap-6 lg:grid lg:grid-cols-2 relative'>
+          <div className='text-center gap-6 lg:text-left'>
             <h2 data-aos="fade-up" data-aos-duration="1000"className='font-mono text-xl font-bold text-dark-navy md:text-2xl lg:text-4xl'>Easy to use riding telemtry</h2>
             <p data-aos="fade-up" data-aos-duration="1500" className='w-5/6 mx-auto text-center font-sans-serif text-dim-grey my-[1rem] md:w-8/12 lg:mx-0 lg:text-left lg:text-xl lg:my-[2rem] lg:w-full'>The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
             <button data-aos="zoom-in" data-aos-duration="2000"
@@ -91,12 +91,12 @@ function Home() {
             </a>
             </button>
           </div>
-          <div className='lg:grid lg:justify-end'>
-            <img data-aos="zoom-in" data-aos-duration="1000" src={telemetry} alt="telemetry" className='w-52 h-52 md:w-80 md:h-80 rounded-full' />
+          <div className='lg:grid lg:justify-end arrow-telemetry'>
+            <img data-aos="zoom-in" data-aos-duration="1000" src={telemetry} alt="telemetry" className='w-64 h-64  md:w-80 md:h-80 rounded-full' />
           </div>
         </article>
-        <article className='flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-6 my-10'>
-          <div className='text-center gap-6 border-2 lg:text-left w-full'>
+        <article className='flex flex-col-reverse lg:flex-row-reverse justify-center items-center gap-6 my-10 relative'>
+          <div className='text-center gap-6 lg:text-left w-full'>
             <h2 data-aos="fade-up" data-aos-duration="1000" className='font-mono text-xl font-bold text-dark-navy md:text-2xl lg:text-4xl'>Coming to a city near you</h2>
             <p data-aos="fade-up" data-aos-duration="1500" className='w-5/6 mx-auto text-center font-sans-serif text-dim-grey my-[1rem] md:w-8/12 lg:mx-0 lg:text-left lg:text-xl lg:my-[2rem] lg:w-full'>Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
             <button data-aos="zoom-in" data-aos-duration="2000"
@@ -109,12 +109,12 @@ function Home() {
             </button>
           
           </div>
-          <div className='lg:grid  lg:justify-start  w-full'>
-            <img data-aos="zoom-in" data-aos-duration="1000" src={nearYou} alt="telemetry" className='w-52 h-52 rounded-full md:w-80 md:h-80 mx-auto' />
+          <div className='lg:grid  lg:justify-start  w-full arrow-city'>
+            <img data-aos="zoom-in" data-aos-duration="1000" src={nearYou} alt="telemetry" className='w-64 h-64  rounded-full md:w-80 md:h-80 mx-auto' />
           </div>
         </article>
-        <article className='flex flex-col-reverse justify-center items-center gap-6 lg:grid lg:grid-cols-2'>
-          <div className='text-center gap-6 border-2 lg:text-left'>
+        <article className='flex flex-col-reverse justify-center items-center gap-6 lg:grid lg:grid-cols-2 relative'>
+          <div className='text-center gap-6 lg:text-left'>
             <h2 data-aos="fade-up" data-aos-duration="1000" className='font-mono text-xl font-bold text-dark-navy md:text-2xl lg:text-4xl'>Zero hassle payments</h2>
             <p data-aos="fade-up" data-aos-duration="1500"className='w-5/6 mx-auto text-center font-sans-serif text-dim-grey my-[1rem] md:w-8/12 lg:mx-0 lg:text-left lg:text-xl lg:my-[2rem] lg:w-full'>Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
             <button data-aos="zoom-in" data-aos-duration="1500"
@@ -127,8 +127,8 @@ function Home() {
             </button>
           
           </div>
-          <div className='lg:grid lg:justify-end'>
-            <img data-aos="zoom-in" data-aos-duration="1000" src={payments} alt="telemetry" className='w-52 h-52 rounded-full md:w-80 md:h-80' />
+          <div className='lg:grid lg:justify-end arrow-hustle'>
+            <img data-aos="zoom-in" data-aos-duration="1000" src={payments} alt="telemetry" className='w-64 h-64 rounded-full md:w-80 md:h-80' />
           </div>
         </article>
       </div>
